@@ -1,4 +1,50 @@
 //JavaScript Document
+function Register() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var age = document.getElementById("age").value;
+  var location = document.getElementById("location").value;
+  if (name == null || name == "") {
+    txt1 = "name not found";
+    alert(txt1);
+  }
+  if (email == null || email == "" || !email.includes("@")) {
+    txt2 = "email address not valid";
+    alert(txt2);
+  }
+  if (age == null || age == "") {
+    txt3 = "age not found";
+    alert(txt3);
+  }
+  if (location == null || name == "") {
+    txt4 = "location not found";
+    alert(txt4);
+  }
+  finish = "Registered Successfully";
+  alert(finish);
+}
+
+// // Prompt Style of asking user to enter their information but doesn't work.
+// var name = prompt("Please enter your name", "enter it here...");
+// if (name == null || name == "") {
+//   txt = "User cancelled the prompt.";
+//   alert(txt);
+// } else {
+//   txt =
+//     "Hello " +
+//     name +
+//     "! How are you today?, we are going to need your email address, age and location before you entering the site! Please type it in after this prompt!";
+//   alert(txt);
+// }
+// var email = prompt("Please enter your email address", "enter it here...");
+// if (!email.includes("@")) {
+//   email = prompt(
+//     "incorrect email address please enter another valid one",
+//     "enter it here..."
+//   );
+// }
+// var age = prompt("Please enter your age", "enter it here...");
+// var location = prompt("Please enter your location", "enter it here...");
 
 //get all the document variables
 console.log("Test test, Linked JS ");
@@ -91,17 +137,52 @@ function addProductDeals(jsonObj) {
     section.appendChild(article);
   }
 }
+// login account - array save
+var loginAccounts = [
+  {
+    username: "test",
+    password: "test"
+  },
+  {
+    username: "mark",
+    password: "song"
+  },
+  {
+    username: "123",
+    password: "321"
+  }
+];
 
-// Initialize and add the map
+//simple hardcodded login function,  for loop to check if username and password exists in array.
+function login() {
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+  for (i = 0; i < loginAccounts.length; i++) {
+    if (
+      username == loginAccounts[i].username &&
+      password == loginAccounts[i].password
+    ) {
+      alert(username + " User Login Successfully ! ");
+      return;
+    } else {
+      alert(
+        "incorrect username or password, The information are HARDCODED in loginAccounts !, you can view source code and add your own! "
+      );
+    }
+  }
+}
+
+// Initialize and add the google map API
 function initMap() {
   // The map, will be centered at the office location, seoul
+  var mapCoords = { lat: 37.5665, lng: 126.978 };
   var map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: 37.5665, lng: 126.978 },
+    center: mapCoords,
     zoom: 8
   });
   // The marker, positioned at HQ Office
   var marker = new google.maps.Marker({
-    position: { lat: 37.5665, lng: 126.978 },
+    position: mapCoords,
     map: map
   });
 }

@@ -14,21 +14,68 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <script src="js/mainjs.js" async></script>
     <!-- link to my google map API key  -->
-    <script
-      async
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZrTzUAIiJARUBo1ejPs-hAVMe1q7Z744&callback=initMap"
-    ></script>
     <title>Assignment 3 - JSON - Store</title>
   </head>
   <header></header>
 
   <body>
+    <!-- Register Form  -->
+    <p>Please Register!</p>
+    Name: <br />
+    <input type="text" name="name" id="name" value="Enter your name" />
+    <br />
+    Email: <br />
+    <input
+      type="text"
+      name="email"
+      id="email"
+      value="Enter your email address "
+    />
+    Age: <br />
+    <input type="text" name="age" id="age" value="Enter your age" />
+    <br />
+    Location: <br />
+    <input
+      type="text"
+      name="location"
+      id="location"
+      value="Enter your location"
+    />
+    <br />
+    <button type="button" onclick="Register()">Register</button>
+    <br />
+    <!-- Login Form  -->
+    <form>
+      <br />
+      Username: <br />
+      <input
+        type="text"
+        name="username"
+        id="username"
+        value="Enter your Username"
+      />
+      Password: <br />
+      <input
+        type="text"
+        name="password"
+        id="password"
+        value="Enter your Password"
+      />
+      <br />
+      <button type="button" onclick="login()">Login</button>
+    </form>
+    <br />
     <section></section>
 
     <!-- Google Map added here  -->
     <h3>HQ Location:</h3>
     <div id="map"></div>
+
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQ4arBzh-MKlGOUHvEMHk3g62IwhCkzQI&callback=initMap"
+    ></script>
 
     <footer>
       <p>&copy; Copyright by Mark Song. All Rights Reserved.</p>
