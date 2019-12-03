@@ -92,22 +92,22 @@ function addProductDeals(jsonObj) {
   }
 }
 
-// Following Google API, init and add the map
-//Reference: https://developers.google.com/maps/documentation/javascript/adding-a-google-map
-function googleMap() {
-  //Stores the office location
-  var officeLocation = { lat: 37.5665, lng: 126.978 };
-  //Creates a maps object
-  var gMap = new google.maps.Map(document.getElementById("gMap"), {
-    zoom: 14,
-    center: officeLocation
-  });
-  //Sets the marker
-  var marker = new google.maps.Marker({
-    position: officeLocation,
-    map: gMap,
-    title: "Weird Tech Group"
-  });
-}
-//call function google map init
-googleMap();
+// // Following Google API, init and add the map
+// //Reference: https://developers.google.com/maps/documentation/javascript/adding-a-google-map
+// function googleMap() {
+//   //Stores the office location
+//   var officeLocation = { lat: 37.5665, lng: 126.978 };
+//   //Creates a maps object
+//   var gMap = new google.maps.Map(document.getElementById("gMap"), {
+//     zoom: 14,
+//     center: officeLocation
+//   });
+//   //Sets the marker
+//   var marker = new google.maps.Marker({
+//     position: officeLocation,
+//     map: gMap,
+//     title: "Weird Tech Group"
+//   });
+// }
+// //call function google map init
+// googleMap();
