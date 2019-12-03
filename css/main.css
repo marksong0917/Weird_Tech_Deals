@@ -1,0 +1,80 @@
+/*CSS for the body*/
+body {
+	font-family: sans-serif;
+	font-size: 150%;
+	line-height: 1.4;
+	width: 100%;
+	background-color: #2d334a;
+}
+
+/*CSS for para element*/
+p {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+	color: #0c9463;
+}
+
+li {
+	font-size: 16px;
+
+}
+
+/*CSS for h1*/
+h1 {
+  font-size: 50px;
+  text-align: center;
+	color: #0c9463;
+}
+
+/*CSS for h2*/
+h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+/* section styles */
+section {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 5px;
+	width: 1200px;
+	margin-left: 70px;
+	color: #0c9463;
+}
+section article {
+	border: 1px solid black;
+	box-shadow: 0 2px 4px #EFF1F3;
+	padding: 2.5%;
+	width: 30%;
+}
+article img {
+	display: block;
+	height: 150px;
+	width: 90px;
+}
+section p {
+  margin: 5px 0;
+}
+
+section ul {
+  margin-top: 0;
+}
+
+header {
+	text-align: center;
+}
+
+/*CSS properties for google maps*/
+#map {
+	height: 500px;
+}
+
+/*CSS properties for the footer*/
+footer div{
+ position: relative;
+ bottom: 0;
+ left: 43%;
+ width: 100%;
+ color: white;
+}
