@@ -21,7 +21,7 @@
       "productPrice": 30,
       "productDesc": "A portable, wind-up and solar rechargeable radio that also doubles as a smartphone charger and LED light. Perfect for emergencies and camping trips.",
       "productKeyFs": ["Smart Phone Charger", "LED Light", "Super Portable"],
-      "img": "img/AMERICAN-RED-CROSS-EMERGENCY-NOAA-WEATHER-RADIO.jpg"
+      "img": "AMERICAN-RED-CROSS-EMERGENCY-NOAA-WEATHER-RADIO.jpg"
     },
 
     {
@@ -29,7 +29,7 @@
       "productPrice": 280,
       "productDesc": "Who doesn't want a robot that goes around your house cleaning it? It's living in the future, right? Well, there's no better time to pick up an iRobot Roomba E5 now that it has had a whopping 27% wiped off the price.",
       "productKeyFs": ["Robot Cleaner", "Lightweight", "Tiny & Good Quality"],
-      "img": "img/IROBOT-ROOMBA-E5.jpg"
+      "img": "IROBOT-ROOMBA-E5.jpg"
     },
 
     {
@@ -37,7 +37,7 @@
       "productPrice": 199,
       "productDesc": "Buying something that wallops you at a rate of a few hits per second doesn't seem like something people would pay for, but that's what a Theragun is. It's essentially a massage tool for people who don't have time for a massage. And for Black Friday, Theragun has up to $200 devices.",
       "productKeyFs": ["Tiny & Good Quality", "Massage Device", "Portable"],
-      "img": "img/THERAGUN.jpg"
+      "img": "THERAGUN.jpg"
     },
 
     {
@@ -49,7 +49,7 @@
         "Future Tech Drone Like",
         "Orange and Little"
       ],
-      "img": "img/DJI.jpg"
+      "img": "DJI.jpg"
     }
   ]
 }
