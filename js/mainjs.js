@@ -68,8 +68,8 @@ function addProductDeals(jsonObj) {
     img.setAttribute("alt", productDeals[i].img);
 
     // adding content,  product name, product price and product description
-    h2.textContent = "Name: " + productDeals[i].productName;
-    p1.textContent = "Price: " + productDeals[i].productPrice;
+    h2.textContent = productDeals[i].productName;
+    p1.textContent = "Price: $" + productDeals[i].productPrice;
     p2.textContent = "Description: " + productDeals[i].productDesc;
 
     //adding keyFeatures content using array for j for items and loop through every feature and adding it
@@ -92,22 +92,16 @@ function addProductDeals(jsonObj) {
   }
 }
 
-// // Following Google API, init and add the map
-// //Reference: https://developers.google.com/maps/documentation/javascript/adding-a-google-map
-// function googleMap() {
-//   //Stores the office location
-//   var officeLocation = { lat: 37.5665, lng: 126.978 };
-//   //Creates a maps object
-//   var gMap = new google.maps.Map(document.getElementById("gMap"), {
-//     zoom: 14,
-//     center: officeLocation
-//   });
-//   //Sets the marker
-//   var marker = new google.maps.Marker({
-//     position: officeLocation,
-//     map: gMap,
-//     title: "Weird Tech Group"
-//   });
-// }
-// //call function google map init
-// googleMap();
+// Initialize and add the map
+function initMap() {
+  // The map, will be centered at the office location, seoul
+  var map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: 37.5665, lng: 126.978 },
+    zoom: 8
+  });
+  // The marker, positioned at HQ Office
+  var marker = new google.maps.Marker({
+    position: { lat: 37.5665, lng: 126.978 },
+    map: map
+  });
+}
