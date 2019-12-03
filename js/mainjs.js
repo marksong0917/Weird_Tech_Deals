@@ -171,18 +171,3 @@ function login() {
     }
   }
 }
-
-// Initialize and add the google map API
-function initMap() {
-  // The map, will be centered at the office location, seoul
-  var mapCoords = { lat: 37.5665, lng: 126.978 };
-  var map = new google.maps.Map(document.getElementById("map"), {
-    center: mapCoords,
-    zoom: 8
-  });
-  // The marker, positioned at HQ Office
-  var marker = new google.maps.Marker({
-    position: mapCoords,
-    map: map
-  });
-}
