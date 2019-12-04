@@ -1,4 +1,5 @@
 //JavaScript Document
+console.log("Test test, Linked JS ");
 function Register() {
   var name = document.getElementById("name").value;
   var email = document.getElementById("email").value;
@@ -47,7 +48,7 @@ function Register() {
 // var location = prompt("Please enter your location", "enter it here...");
 
 //get all the document variables
-console.log("Test test, Linked JS ");
+
 let header = document.querySelector("header");
 let section = document.querySelector("section");
 let footer = document.querySelector("footer");

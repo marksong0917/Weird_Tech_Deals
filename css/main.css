@@ -3,7 +3,7 @@ html {
   background-color: #2d4a37;
   font-family: "Gupter", serif;
   text-align: center;
-  width: auto;
+  width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -15,6 +15,10 @@ body {
   font-weight: bold;
   line-height: 1.6;
   color: gold;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -74,20 +78,15 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #45a049;
 }
-
-div {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-/* section styles */
+/* section css to make products display side by side evenly  */
 section {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 5px;
-  width: 1200px;
-  margin-left: 70px;
+  margin-bottom: 2.5px;
+  margin-left: 25px;
   color: #0c9463;
+  width: auto;
+  height: auto;
 }
 section article {
   border: 1px solid black;
@@ -110,5 +109,24 @@ section ul {
 
 /*Google map CSSs*/
 #map {
+  margin: 0;
+  padding: 0;
   height: 100%;
+  width: 100%;
+}
+
+/* weather netwrok css  */
+#weather {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: auto;
+}
+
+/* weather netwrok css  */
+#Spotify {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: 100%;
 }
